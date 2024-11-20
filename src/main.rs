@@ -1,12 +1,11 @@
-pub mod contracts;
-pub mod storage;
-pub mod network;
-pub mod main;
 pub mod command;
+pub mod contracts;
 pub mod crypto;
-
+pub mod network;
+pub mod state;
+pub mod storage;
 
 #[tokio::main]
-fn main() {
+async fn main() {
     println!("Hello, world!");
 }
